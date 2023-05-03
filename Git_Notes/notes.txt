@@ -1,0 +1,3 @@
+Links utiles:
+    - https://devhints.io/git-log
+    - https://git-scm.com/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio
