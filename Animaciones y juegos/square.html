@@ -1,0 +1,36 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    /*
+        NOTAS
+    - CanvasRenderingContext2D.strokeRect()
+        + Paints a rectangle which has a starting point at (x, y) and has a w width and an h height onto the canvas, using the current stroke style.
+    - CanvasRenderingContext2D.strokeStyle
+        + Color or style to use for the lines around shapes. Default #000 (black).
+    */
+
+    function dibujarCuadradoColor(x, y, color){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+    
+    /* var x = 0;
+    while(x < 600){
+        dibujarCuadradoColor(x, 0, "green");
+        dibujarCuadradoColor(x, 50, "yellow");
+        dibujarCuadradoColor(x, 100, "red");
+        x += 50;
+    } */
+
+    for (var x = 0; x < 600; x += 50){
+        dibujarCuadradoColor(x, 0, "red");
+        dibujarCuadradoColor(x, 50, "yellow");
+        dibujarCuadradoColor(x, 100, "green");
+    }
+     
+</script>
