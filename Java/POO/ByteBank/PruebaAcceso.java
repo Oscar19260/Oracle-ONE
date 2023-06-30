@@ -1,6 +1,6 @@
 public class PruebaAcceso {
     public static void main(String[] args) {
-        Cuenta cuenta = new Cuenta(-22);
+        Cuenta1 cuenta = new Cuenta1(-22);
 
         cuenta.depositar(400);
         cuenta.retirar(300);
